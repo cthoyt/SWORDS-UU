@@ -7,8 +7,8 @@ import os
 
 from fastcore.foundation import AttrDict
 
-from collect_users.scripts.enrich_users import read_input_file, get_userdata, update_users 
-from collect_users.scripts.prepare_filtering import is_student 
+from swords.users.enrich_users import read_input_file, get_userdata, update_users
+from swords.users.prepare_filtering import is_student
 
 
 

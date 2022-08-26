@@ -7,8 +7,8 @@ from unittest.mock import MagicMock, Mock
 from fastcore.foundation import L, AttrDict
 from ghapi.all import GhApi
 
-from collect_users.methods.github_search.github_search import get_complete_query_result, get_users_from_repos, get_users_from_users, Service
-from collect_users.methods.pure.pure import get_username_from_text
+from swords.users.methods.github_search.github_search import get_complete_query_result, get_users_from_repos, get_users_from_users, Service
+from swords.users.methods.pure.pure import get_username_from_text
 
 
 """

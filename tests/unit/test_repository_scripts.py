@@ -6,7 +6,7 @@ from unittest.mock import MagicMock, Mock
 
 from fastcore.foundation import AttrDict, L
 
-from collect_repositories.scripts.repositories import get_repos, get_repos_formatted
+from swords.repositories.repositories import get_repos, get_repos_formatted
 
 
 @pytest.fixture

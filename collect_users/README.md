@@ -7,10 +7,10 @@ GitHub and GitLab that are related to the organisation.
 
 Currently, the following user collection methods are available:
 
-- **[PapersWithCode](methods/papers_with_code)** The website Papers With Code (https://paperswithcode.com/) highlights Machine Learning research and the code to implement it. 
-- **[GitHub Search](methods/github_search)** Search for users on [GitHub Search](https://github.com/search/advanced) based on tags, users, and repositories given references to the organisation.
-- **[Research Information Management System (RIMS)](methods/pure)** Use the Research Information Management System of the organisation, PURE https://www.elsevier.com/solutions/pure, for collection of research software and code. 
-- **[Employee pages](methods/profile_pages)** Collect user profiles from the Utrecht University website.
+- **[PapersWithCode](../src/swords/users/methods/papers_with_code)** The website Papers With Code (https://paperswithcode.com/) highlights Machine Learning research and the code to implement it. 
+- **[GitHub Search](../src/swords/users/methods/github_search)** Search for users on [GitHub Search](https://github.com/search/advanced) based on tags, users, and repositories given references to the organisation.
+- **[Research Information Management System (RIMS)](../src/swords/users/methods/pure)** Use the Research Information Management System of the organisation, PURE https://www.elsevier.com/solutions/pure, for collection of research software and code. 
+- **[Employee pages](../src/swords/users/methods/profile_pages)** Collect user profiles from the Utrecht University website.
 
 The collection method scripts can be found in the subfolder `methods`. Each method has a subfolder `results` where the output will be located.
 

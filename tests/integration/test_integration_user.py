@@ -8,9 +8,9 @@ import os
 import pandas as pd
 import time
 
-from collect_users.methods.github_search.github_search import get_complete_query_result, get_users_from_repos, get_users_from_users
-from collect_users.scripts.enrich_users import read_input_file, get_userdata, update_users, Service
-from collect_users.scripts.prepare_filtering import is_student
+from swords.users.methods.github_search.github_search import get_complete_query_result, get_users_from_repos, get_users_from_users
+from swords.users.enrich_users import read_input_file, get_userdata, update_users, Service
+from swords.users.prepare_filtering import is_student
 
 """
 Tests for github_search.py

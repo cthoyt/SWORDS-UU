@@ -5,13 +5,12 @@ import pytest
 
 from ghapi.all import GhApi
 import time
-import pandas as pd
 
-from collect_variables.scripts.github_api.github import (get_data_from_api,
-                                                         Service,
-                                                         Repo)
+from swords.variables.github_api.github import (get_data_from_api,
+                                                Service,
+                                                Repo)
 
-from collect_variables.scripts.howfairis_api.howfairis_variables import parse_repo
+from swords.variables.howfairis_api.howfairis_variables import parse_repo
 
 
 @pytest.fixture

@@ -6,7 +6,7 @@ import pytest
 from ghapi.all import GhApi
 import time
 
-from collect_repositories.scripts.repositories import get_repos, get_repos_formatted, Service
+from swords.repositories.repositories import get_repos, get_repos_formatted, Service
 
 """
 Tests for repositories.py

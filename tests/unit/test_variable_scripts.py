@@ -7,16 +7,16 @@ from unittest.mock import MagicMock
 from fastcore.foundation import AttrDict, L
 from howfairis import Compliance
 
-from collect_variables.scripts.github_api.github import (get_data_from_api,
-                                                         get_coc,
-                                                         get_contributors,
-                                                         get_jupyter_notebooks,
-                                                         get_languages,
-                                                         get_readmes,
-                                                         Repo)
+from swords.variables.github_api.github import (get_data_from_api,
+                                                get_coc,
+                                                get_contributors,
+                                                get_jupyter_notebooks,
+                                                get_languages,
+                                                get_readmes,
+                                                Repo)
 
-from collect_variables.scripts.howfairis_api.howfairis_variables import (get_howfairis_compliance,
-                                                                         parse_repo)
+from swords.variables.howfairis_api.howfairis_variables import (get_howfairis_compliance,
+                                                                parse_repo)
 
 
 @pytest.fixture
@@ -33,7 +33,7 @@ def test_parse_repo(mock_repo, monkeypatch):
     def mock_get(*args, **kwargs):
         return (True, True, True, True, False)
     monkeypatch.setattr(
-        "collect_variables.scripts.howfairis_api.howfairis_variables.get_howfairis_compliance", mock_get)
+        "swords.variables.howfairis_api.howfairis_variables.get_howfairis_compliance", mock_get)
 
     result = parse_repo(mock_repo.url)
     assert "asreview-covid19" in result[0] and True == result[1] 
